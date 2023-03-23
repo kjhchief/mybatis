@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+                        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+                        
+<!-- 네임스페이스(사용영역) 설정 -->
+<mapper namespace="com.ezen.mybatis.domain.employee.mapper.MemberDao">
+	
+	<select id="findAll" resultType="com.ezen.mybatis.domain.employee.mapper.Member" >
+	
+		SELECT member_id                      	"id", 
+		       name                       		"name", 
+		       email                            "email" 
+		FROM   member
+	</select>
+	
+	
+</mapper>
